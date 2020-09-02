@@ -182,8 +182,22 @@ en de paragraaf tags.
 
     <footer>
         <hr>
-        <a href="www.techgrounds.nl">TechGrounds Academy</a>
+        <a href="www.techgrounds.nl" target="_blank">TechGrounds Academy</a>
+        
     </footer>
+
+    <!-- {
+        // Mainly for static files
+        "liveServer.settings.useWebExt": true,
+    
+        // This means that you change your real URL (current PHP url) 
+        // to another URL (which Live Sever starts).
+        "liveServer.settings.proxy": {
+            "enable": true,                             //   i. enabled
+            "baseUri": "/",                             //  ii. workspace
+            "proxyUri": "http://127.0.0.1:5500/TG-Web-development-/html/Intro/intro.html" // iii. actual address
+        },
+    } -->
 </body>
 
 </html>
