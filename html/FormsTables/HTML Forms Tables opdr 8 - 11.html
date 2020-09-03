@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms & Tables opdr 8 - 11</title>
+</head>
+
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Reserverings Formulier Boeken</legend>
+            First Name: <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            <br>
+            Last Name: <input type="text" id="lastname" name="lasttname" placeholder="Last Name">
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10">
+            <br>
+            Email: <input type="email" id="email" name="email">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>reserveer een boek</legend>
+
+
+            <label for="boek">Kies hoeveelheid boeken:</label>
+            <select id="boek" name="boek">
+                <option value="boek">1</option>
+                <option value="boek">2</option>
+                <option value="boek">3</option>
+                <option value="boek">4</option>
+                <option value="boek">5</option>
+            </select>
+            <br>
+            Boek 1: <input type="text" name="boek1" id="boek1"><br>
+            Boek 2: <input type="text" name="boek2" id="boek2"><br>
+            Boek 3:<input type="text" name="boek3" id="boek3"><br>
+            Boek 4:<input type="text" name="boek4" id="boek4"><br>
+            Boek 5:<input type="text" name="boek5" id="boek5"><br>
+            Submit:<input type="submit" value="Submit"><br>
+        </fieldset>
+    </form>
+
+    <form method="POST">
+        <fieldset>
+            <legend>inschrijving opdracht 9</legend>
+            First Name: <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            <br>
+            Last Name: <input type="text" id="lastname" name="lasttname" placeholder="Last Name">
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10">
+            <br>
+            Email: <input type="email" id="email" name="email">
+            <br>
+            Submit:<input type="submit" value="Submit"><br>
+            Reset:<input type="reset" value="Reset">
+        </fieldset>
+        </form>
+
+<h1>Vraag 10</h1>
+     <p>De table tag definieert een HTML-tabel.
+        De thead tag wordt gebruikt om koptekstinhoud in een HTML-tabel te groeperen.<br>
+        De tbody tag wordt gebruikt om de body-inhoud in een HTML-tabel te groeperen.<br>
+        De tfoot tag wordt gebruikt om voettekstinhoud in een HTML-tabel te groeperen.<br>
+        De tr tag definieert een rij in een HTML-tabel.<br>
+        De th tag definieert een koptekstcel in een HTML-tabel.<br>
+        De td tag definieert een standaard datacel in een HTML-tabel.</p>
+
+        <table>
+            <tr>
+              <th>Voornaam</th>
+              <th>Achternaam</th>
+              <th>Leeftijd</th>
+              <th>Telefoonnr</th>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>41</td>
+              <td>+31 12345678</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>Smith</td>
+                <td>32</td>
+                <td>+31 12345678</td>
+              </tr>
+
+              <tr>
+                <td>Alexander</td>
+                <td>Beave</td>
+                <td>16</td>
+                <td>+31 12345678</td>
+              </tr>
+        
+          </table>
+          
+
+
+            
+</body>
+
+</html>
