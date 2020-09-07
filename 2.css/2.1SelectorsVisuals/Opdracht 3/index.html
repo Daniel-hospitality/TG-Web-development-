@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <h1>Opdracht 3</h1>
+    <p>Er zijn verschillende selectors, bijvoorbeeld;</p>
+
+    <ul>
+        <li>type selectors</li>
+        <li>descendant selectors</li>
+        <li>class selectors</li>
+    </ul>
+
+    <h1>Antwoord 3</h1>
+    <p>Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke
+        selector.</p>
+    <ul>
+        <li>Type selectors</li>
+        <p>vb &#60;H1&#62;, &#60;p&#62;, &#60;spam&#62;, &#60;div&#62;</p>
+        <p>Een Type Selector (ook wel Element Type Selector genoemd) koppelt elementen aan de corresponderende
+            elementknooppuntnaam</p>
+        <p>p { /* "p" is the type selector */
+            margin: 0 0 1em 0;
+            }</p>
+        <li>Descendant selectors</li>
+        <p>= vb ul li { }
+            header h2 { }
+            footer a { }
+            .module div { }
+            #info-toggle span { }
+            div dl dt a { }</p>
+        <p>A descendant selector in CSS is any selector with white space between two selectors without a combinator.
+            Here’s some examples:</p>
+        <p>Take ul li { } for example. It means “any list item that is a descendant of an unordered list.”</p>
+        <p>To illustrate, div span { } will match:</p>
+        <p>&#60;div&#62;<br>
+            &#60;span>I will match&#60;/span&#62;<br>
+            &#60;ul&#62;<br>
+            &#60;li&#62;
+            &#60;span>I will match too&#60;/span&#62;<br>
+            &#60;/li&#62;<br>
+            &#60;/ul&#62;<br>
+            &#60;/div&#62;</p>
+
+
+        <li>Class selectors</li>
+        <p>A class selector in CSS starts with a dot &#60;.&#62;, like this:</p>
+        <p>.class &#123;
+
+            &#125;</p>
+
+        <p>vb &#60;button class="big-button"&#62;Push Me &#60;/button&#62;</p>
+        <p>is selected and styled like this:</p>
+        <p>.big-button &#123;
+            font-size: 60px;
+            &#125;</p>
+            <br>
+            <p>An element can have more than one class:</p>
+    </ul>
+
+</body>
+
+</html>
