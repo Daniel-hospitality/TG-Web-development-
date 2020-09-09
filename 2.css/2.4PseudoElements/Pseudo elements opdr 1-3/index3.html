@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .exciting-text::after {
+        content: " <- EXCITING!"; 
+        color: green;
+      }
+      
+      .boring-text::after {
+        content: " <- BORING";
+        color: red;
+      }
+      h1::first-line {
+        color: #ff0000;
+        /* font-variant: small-caps; */
+      }
+      
+    </style>
+   
+</head>
+<body>
+<h1>After</h1>
+<h1></h1>
+    <p class="boring-text">Here is some plain old boring text.</p>
+    <p>Here is some normal text that is neither boring nor exciting.</p>
+    <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+
+</body>
+
+</html>
