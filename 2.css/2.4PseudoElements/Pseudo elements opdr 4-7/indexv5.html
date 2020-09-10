@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            position: relative;
+        }
+
+        div p {
+            position: absolute;
+            width: 200px;
+            text-align: center;
+        }
+
+        div::before {
+            position: absolute;
+            height: 306px;
+            border: 2px solid black;
+            content: url("038.gif");
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eveniet nesciunt hic cumque sed aut
+            quas perspiciatis provident, illo rerum enim tempore alias consequuntur est impedit laborum optio magnam
+            labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat velit commodi vel, laudantium enim
+            nihil quos, id provident consequatur ex quisquam rerum officiis assumenda quibusdam corrupti omnis
+            temporibus sunt ipsam.</p>
+    </div>
+</body>
+
+</html>
