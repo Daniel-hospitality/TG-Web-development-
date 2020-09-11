@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .burst-8 {
+        background: red;
+        width: 80px;
+        height: 80px;
+        top: 100px;
+        left: 100px;
+        position: relative;
+        transform: rotate(-5deg);
+      }
+      .burst-8:before {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background: red;
+        transform: rotate(20deg);
+      }
+
+      .burst-8::after {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background: red;
+        transform: rotate(60deg);
+      }
+    </style>
+    
+</head>
+<body>
+    <div class="burst-8"></div>
+</body>
+</html>
