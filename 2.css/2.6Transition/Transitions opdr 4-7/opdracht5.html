@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+    <style>
+        .opdracht5 {
+            height: 500px;
+            width: 500px;
+            background-color: rgba(189, 16, 16, 0.397);
+            /* display: flex; */
+            position: relative;
+            border: 2px solid goldenrod
+        }
+
+        img {
+            border: 10px solid black;
+           
+        }
+
+        .box {
+            width: 210px;
+            height: 210px;
+            position: absolute;
+            background-color: red;
+            font-size: 20px;
+            left: 5px;
+            top: 5px;
+            transform-origin: left bottom;
+            transition-duration: 4s;
+            /* border: 2px solid black; */
+
+            
+        }
+        .opdracht5:hover .box {
+            right: 50;
+            transform: rotate(80deg);
+/* 
+            transition-duration: 2s, 3s, 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class='opdracht5'>
+
+        <div class="flex-container">
+            <div class='Plaatje'>
+                <img src="gif1.gif" alt="gif1" style="width:200px;height:200px;">
+
+                <div class="box box1">voorkant</div>
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+
+    <style>
+        .some-page-wrapper {
+            height: 500px;
+            width: 550px;
+            background-color: rgba(189, 16, 16, 0.397);
+            display: flex
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 1px;
+            line-height: 100px;
+            font-size: 15px;
+            background-color: blanchedalmond;
+            text-align: center;
+            transition-property: margin-left, background-color, border-radius;
+            transition-duration: 3s, 1s, 2s;
+        }
+
+        .some-page-wrapper:hover .box1 {
+            margin-left: 450px;
+            background-color: rgba(9, 47, 24, 0.164);
+            border-radius: 50%;
+            transition-property: margin-left, background-color, border-radius;
+            transition-duration: 3s, 3s, 3s;
+
+        }
+
+        .some-page-wrapper:hover .box2 {
+            margin-left: 450px;
+            background-color: rgba(167, 16, 61, 0.164);
+            border-radius: 20%;
+            /* transition-property: margin-left, background-color, border-radius; */
+            transition-duration: 5s, 3s, 3s;
+
+        }
+
+        .some-page-wrapper:hover .box3 {
+            margin-left: 450px;
+            background-color: rgba(11, 58, 168, 0.164);
+            /* border-radius: 20%; */
+            /* transition-property: margin-left, background-color, border-radius; */
+            transition-duration: 3s, 3s, 3s;
+
+        }
+
+        .some-page-wrapper:hover .box4 {
+            margin-left: 450px;
+            background-color: rgba(212, 219, 8, 0.164);
+            border-radius: 20%;
+            /* transition-property: margin-left, background-color, border-radius; */
+            transition-duration: 5s, 3s, 3s;
+
+        }
+
+        .some-page-wrapper:hover .box5 {
+            margin-left: 450px;
+            background-color: rgba(16, 30, 163, 0.164);
+            border-radius: 20%;
+            /* transition-property: margin-left, background-color, border-radius; */
+            transition-duration: 2s, 3s, 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Opdracht 3</h1>
+    <p>Transitions Timing</p>
+
+    <div class='some-page-wrapper'>
+
+        <div class="flex-container">
+
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

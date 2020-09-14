@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+
+    <style>
+        .some-page-wrapper {
+            height: 500px;
+            width: 500px;
+            background-color: rgba(189, 16, 16, 0.397);
+            /* display: flex; */
+            position: relative;
+            border: 2px solid goldenrod
+        }
+
+        .box {
+            position: absolute;
+            /* top: 45%; */
+            /* bottom: 45%; */
+            /* left: 45%; */
+            /* right: 45%; */
+            width: 50px;
+            height: 50px;
+            margin: 1px;
+            line-height: 50px;
+            font-size: 15px;
+            background-color: blanchedalmond;
+            text-align: center;
+            transition-property: top, right, bottom, left;
+            transition-duration: 1s, 2s, 2s, 2s;
+            transition-delay: 1s;
+        }
+
+        .box1 {
+            left: 45%;
+            top: 40%;
+
+        }
+
+        .box2 {
+            right: 45%;
+            top: 40%;
+
+        }
+
+        .box3 {
+           left : 45%;
+           bottom: 50%;
+
+        }
+
+        .some-page-wrapper:hover .box1 {
+
+            top: 0;
+            left: 0;
+
+        }
+
+        .some-page-wrapper:hover .box2 {
+            top: 0;
+            right: 0;
+
+        }
+
+        .some-page-wrapper:hover .box3 {
+            left: 0;
+            bottom: 0;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Opdracht 4</h1>
+    <p>Transitions Timing</p>
+
+    <div class='some-page-wrapper'>
+
+        <div class="flex-container">
+
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
