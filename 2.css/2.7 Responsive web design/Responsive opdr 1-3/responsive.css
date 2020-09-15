@@ -21,11 +21,12 @@ body {
   text-align: center;
   margin: auto;
   line-height: 2em;
+  
 }
 .logo {
   height: 80px;
   width: 80px;
-  background-image: url("/CSS-test/spaceship.png");
+  background-image: url("spaceship.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -93,3 +94,22 @@ nav a {
   position: relative;
   bottom: 2px;
 }
+/* opdracht 1 */
+@media   (max-width: 480px){
+  .page-title {
+    color: red;
+    width: 270px;
+  }
+}
+
+/* opdracht 2 */
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .gallery-item .thumbnail {width: 95%;}
+}
+
+/* opdracht 3 */
+@media(min-resolution:150dpi){.logo {background-image: url("spaceship2.png")}}
+
+/* opdracht 4 */
+
+
