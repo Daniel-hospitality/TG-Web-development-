@@ -1,0 +1,123 @@
+body {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    
+  }
+  
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    list-style-type: none;
+    background: rgba(194, 177, 82, 0.5);
+    margin: 0;
+  }
+  
+  /* ruimte tussen de buttons */
+nav li { 
+    padding: 1em;
+    
+
+  }
+
+nav a {
+    text-decoration: none ;
+    color: black;
+    
+} 
+
+nav li:hover {
+    background-color: rgba(194, 177, 82, 0.5);
+
+} 
+ 
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    color: rgb(97, 135, 216);
+    background-image: url(Image/cooking.jpg);
+    background-size: cover;
+    /* width: 50vh; */
+}
+
+
+
+button { 
+    background-color: transparent;
+    color:  rgb(97, 135, 216);
+    padding: 25px 30px;
+    border-radius: 10px 1px;
+    font-size: 10px;
+} 
+button:hover {
+    flex-grow: 4;
+    max-width: 100%;
+    font-size: 1em;
+    color: rgb(128, 179, 128);
+    background-color: transparent;
+}
+
+.populaire {
+    
+    margin: 0px;
+    width: 100%;
+    /* background-color: rgba(119, 119, 121, 0.103); */
+   
+  
+}
+
+.pasta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.gerecht {
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    /* text-align: center; */
+}
+.item h4, h6
+ {
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px){
+
+}
