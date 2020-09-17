@@ -1,5 +1,7 @@
-body {
-    font-size: 20px;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
     font-family: 'Lobster', cursive;
 }
 
@@ -36,7 +38,7 @@ nav li:hover {
 
 } 
  
-
+/* Banner en buttons */
 header {
     display: flex;
     justify-content: flex-end;
@@ -47,7 +49,35 @@ header {
     /* width: 50vh; */
 }
 
+/* -----------------------NaderOnderzoeken ---------------------------------------------------------------------- */
 
+
+.banner .cooking{margin:5% 7vw;}
+
+.banner .cooking h1{font-size: 5vw;}
+.banner .cooking p {font-size: 2vw;}
+.banner .cooking button {
+
+    font-size: 2em;
+    padding: 0.5em;
+    width: 90%;
+    min-width: 3em;
+    max-width: 7em;
+    background:none;
+    color: cornflowerblue;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    margin:10px;
+    border: 2px solid rgb(128, 179, 128) ;
+}
+
+.banner .cooking button:hover {
+background: cornflowerblue;
+/* opacity: 0.5; */
+color: white;
+
+}
+/* --------------------------------------------------------------------------------------------------- */
 
 button { 
     background-color: transparent;
@@ -64,13 +94,14 @@ button:hover {
     background-color: transparent;
 }
 
+/* populaire gerechten */
+
 .populaire {
     
     margin: 0px;
     width: 100%;
+    text-align: center;
     /* background-color: rgba(119, 119, 121, 0.103); */
-   
-  
 }
 
 .pasta {
@@ -83,29 +114,120 @@ button:hover {
     margin: 10px;
     line-height: 20px;
     font-size: 20px;
-    text-align: center;
-
 }
+
 .gerecht {
-    /* display: flex; */
-    /* flex-direction: column; */
     flex-basis: 100%;
     flex: 1;
     margin: 10px;
     line-height: 20px;
     font-size: 20px;
-    /* text-align: center; */
 }
-.item h4, h6
- {
+
+.gerecht .item h4, .gerecht .item p{
     display: inline-block;
+   
+} 
+/* Menu flex beter leren en meer beheersen */
 
+#menus h1{
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+.menus-container { 
+    display: flex;
+    max-width: 90%;
+    
+    
+}
+
+/* ruimte tussen chef en tekst */
+.menus {
+    display: flex;
+    margin-left: 3%;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+/* styling volledig menu */
+.menu {
+    margin: 0.5em;
+    min-width: 300px;
+    max-width: 10%;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+/* chef flex end onder de pagina */
+.chef {
+    align-self: flex-end;
+    margin-bottom: -5px;
+    margin-left: 5vw;
+    
+}
+ .chef img{
+    height: 30vw;
+ }
+
+ /* footer extra nav en icons */
+
+ footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:rgb(128, 179, 128);
+    height: 350px;
+    color: rgb(97, 135, 216);
+    margin-bottom: 0;
+}
+
+.contact, .navigation{
+   width: 25%;
+    margin: 30px; 
+
+}
+
+
+.navigation ul li{
+    padding: 0;
+    margin-left: -30px;
+    list-style-type: none;
+}
+
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(97, 135, 216);
+    font-size: 20px;
+
+}
+.lni-facebook-oval {
+    color:  rgb(97, 135, 216);
+    font-size: 3em;
+}
+
+
+
+.lni-twitter {
+     color :rgb(16, 143, 16);
+     font-size: 3em;
+}
+.lni-instagram {
+    color: rgb(97, 135, 216);
+    font-size: 3em;
 }
 
 
 
 
 
+    
+    
 
 
 
@@ -116,8 +238,60 @@ button:hover {
 
 
 
+/* media query uitwerken en nog nader onderzoeken diepgang */
 
 
-@media (max-width:576px){
+
+
+@media (max-width:576px){ nav ul{justify-content: center;}}
+.banner .cooking{
+    text-align: center;
+}
+.banner .cooking h1{font-size: 4em;}
+.banner .cooking p{font-size: 2em;}
+.banner .cooking button {
+    font-size:1.5em;
+    
+}
+
+@media (min-width:576px) and (max-width:768px){
+
+    /* -----Navigation---- */
+    nav ul{justify-content: center;}
+
+    /* ------Header------ */
+    .banner .cooking{
+        text-align: center;
+    }
+    .banner .cooking h1{font-size: 4em;}
+    .banner .cooking p{font-size: 2em;}
+    .banner .cooking button {font-size:1.5em;}
+
+    /* ------Main------ */ 
 
 }
+
+
+@media (min-width:768px) and (max-width:992px){
+
+        /* -----Navigation---- */
+        nav ul{justify-content: center;}
+
+        /* ------Header------ */
+        .banner .cooking h1{font-size: 4em;}
+        .banner .cooking p{font-size: 2em;}
+        .banner .cooking button {font-size:1.5em;}
+
+        /* ------Main------ */ 
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+         /* -----Navigation---- */
+
+         /* ------Header------ */
+
+         /* ------Main------ */ 
+  
+}
+      
