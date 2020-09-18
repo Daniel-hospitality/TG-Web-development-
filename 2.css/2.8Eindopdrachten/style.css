@@ -71,38 +71,38 @@ header {
     border: 2px solid rgb(128, 179, 128) ;
 } */
 
-/* .banner .cooking button:hover {
-background: cornflowerblue;
-opacity: 0.5;
- color: white;
 
-}  */
 /* --------------------------------------------------------------------------------------------------- */
 
 button { 
-    /* display: inline-block; */
-    /* background-color: transparent; */
-    /* color:  rgb(97, 135, 216); */
-    /* padding: 25px 30px; */
-    /* border-radius: 10px 1px; */
-    /* font-size: 10px; */
+    display: inline-block;
+    background-color: transparent;
+    color:  rgb(97, 135, 216);
+    padding: 5px 5px;
+    
+    font-size: 20px;
 }  
 
-/* .button1 {
-    color: rgb(097, 135, 216);
-    background-color: transparent;
-} */
+.button1 {
+    color: rgb(97, 135, 216);
+    background-color: rgba(143, 197, 143, 0.397);
+} 
 
 .button2 {
-    /* color: rgb(143, 197, 143); */
+    color: rgba(143, 197, 143, 0.466);
+    background-color: rgba(97, 135, 216, 0.39);
 }
 
 button:hover {
-    /* flex-grow: 4; */
-    /* max-width: 100%; */
-    /* font-size: 1em; */
-    /* color: rgb(128, 179, 128); */
-    /* background-color: transparent; */
+    flex-grow: 4;
+    max-width: 100%;
+    font-size: 1em;
+    color: rgb(128, 179, 128);
+    background-color: transparent;
+}
+.button2:hover {
+    color: rgba(97, 135, 216, 0.774);
+
 }
 
 
@@ -172,11 +172,11 @@ button:hover {
 
 .menu {
     margin: 0.5em;
-    min-width: 300px;
-    max-width: 10%;
+    min-width: 200px;
+    max-width: 5%;
     margin-bottom: 20px;
-    align-items: center;
-    
+    /* align-items: center;
+     */
 }
 .item1 {
     display: flex;
