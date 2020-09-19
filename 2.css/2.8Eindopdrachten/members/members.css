@@ -27,9 +27,33 @@ nav {
   /* align-items: center; */
     
     
-  }
-  
+}
+ 
 
+.text-icons i {
+  position: absolute;
+}
+
+.text-icons {
+  width: 250px;
+  margin-bottom: 100px;
+
+}
+
+.lni {
+  bottom: 2000px;
+  padding: 10px; 
+  color: green; 
+  min-width: 50px; 
+  text-align: center; 
+}
+
+.llink {
+  width: 100%; 
+  padding: 10px; 
+  text-align: center; 
+
+}
   
 nav a  {
   display: block;
@@ -38,7 +62,7 @@ nav a  {
   font-size: 20px;
   color: #ffffff;
     
-  }
+}
 
 nav a.active {
   background-color: turquoise;
@@ -53,16 +77,16 @@ nav a:hover:not(.active) {
 ul {
     list-style: none;
     /* color: rgb(255, 253, 253); */
-    display: inline;
+    /* display: inline; */
   
 }
 
-.lni {
+/* .lni {
  color: #4bcb6b;
- /* padding: 20px 20px; */
+ padding: 20px 20px;
  margin-bottom: 10px;
   
-}
+}  */
 
 
 
