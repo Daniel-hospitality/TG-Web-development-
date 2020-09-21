@@ -15,7 +15,7 @@ height: 400px;
 background-image:
 url("lemonade.jpg");
 
- .slogan {
+ &.slogan {
      position: absolute;
      border: $standaard-border;
      top: 200px;
