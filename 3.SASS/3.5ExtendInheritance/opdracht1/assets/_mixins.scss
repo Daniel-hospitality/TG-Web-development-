@@ -1,0 +1,29 @@
+@import 'colors';
+
+
+@mixin stylebuttons {
+    background-color: $primary-color;
+    color: $tertiary-color;
+
+    &:hover {
+        background-color:$tertiary-color;
+        color: $secondary-color;
+    }
+}
+
+@mixin colortransition {
+    width: 100px;
+    height: 100px;
+    background-color: $secondary-color;
+    
+
+    &:hover {
+        transition: background-color 0.5s ease;
+        background-color: $quaternary-color;
+        padding: 10px;
+    }
+
+
+    
+}
+

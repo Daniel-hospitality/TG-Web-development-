@@ -6,14 +6,18 @@ body {
 
 
 h1 {
-    color: #a0aec0;
+    color: rgb(97, 135, 216);
     text-align: center;
 }
 
 h2 {
-    color: #C5DEEA;
+    color: rgb(252, 252, 253);
     text-align: center;
 }
+
+
+
+
 
 nav {
   /* margin: 0; */
@@ -112,41 +116,73 @@ span:hover {background-color: rgb(221, 221, 221);}
 
 /* ------------------------------------ */
 
-
-* {
-  box-sizing: border-box;
- } 
-.container { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 40vh;
+form {
   width: 60%;
-  margin-left: 25%;
-  flex-wrap: wrap;
-  color: #000000;
-  border: 1px solid black;
-  } 
-.container > div {
-  font-size: 5vw;
-  padding: .5em;
-  color: rgb(2, 1, 1);
-  margin: 10px;
-  border-radius: 3px;
-  /* background: rgb(219, 243, 6); */
-  /* border: 5px solid black; */
+  margin: 0 auto;
 }
-.container > div:nth-child(odd) {
-  width: 10%;
-  }
-.container > div:nth-child(even) {
-  width: 20%;
-  }
-.container > div:nth-child(2),
-.container > div:nth-child(4),
-.container > div:nth-child(9) {
-  width: 60%;
-  }  
+
+.fieldset {
+  display: flex;
+  flex-flow: row wrap;
+  border: none;
+}
+
+.fieldbox {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.fieldbox:nth-child(1) {
+  flex: 1 1 55%;
+}
+
+.fieldbox:nth-child(2) {
+  flex: 1 1 25%;
+}
+
+.fieldbox:nth-child(3) {
+  flex: 1 1 10%;
+}
+
+.fieldbox:nth-child(4) {
+  flex: 1 1 35%;
+}
+
+.fieldbox:nth-child(5) {
+  flex: 1 1 25%;
+}
+
+.fieldbox:nth-child(6) {
+  flex: 1 1 30%;
+}
+
+.fieldbox:nth-child(7) {
+  flex: 1 1 100%;
+}
+
+.fieldbox:nth-child(8) {
+  flex: 1 1 30%;
+}
+
+.fieldbox:nth-child(9) {
+  flex: 1 1 30%;
+}
+
+.fieldbox:nth-child(10) {
+  flex: 1 1 30%;
+}
+
+input {
+  background-color: lightblue;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+
 
 
 

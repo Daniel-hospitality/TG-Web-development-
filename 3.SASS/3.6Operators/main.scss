@@ -1,0 +1,60 @@
+@import 'assets/mixins';
+
+.button {
+    background-color: $primary-color;
+
+    &:hover { background-color: $secondary-color;
+    
+     }
+
+
+}
+
+.button1 {
+
+    @include stylebuttons;
+}
+
+.colorChangingSquare {
+    @include colortransition;
+}
+
+.image {
+    height: 400px * 2;
+    width: auto;
+
+}
+
+.image2 {
+    height: 400px + 100;
+    width: auto;
+}
+
+.image3 {
+    height: 400px 300px;
+    width: auto;
+}
+
+.image4 {
+    height: 200px + 100px - 400px;
+    width: auto;
+}
+
+.image5 {
+    height: 200px * 3;
+    width: auto;
+}
+
+.image6 {
+    height: 750px * 1px;
+    width: auto;
+}
+
+.image7 {
+    height: 30px / 5px;
+    width: 24px / 4;
+}
+.image8 {
+    height: (30px / 5px);
+    width: (24px/ 4);
+}

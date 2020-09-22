@@ -1,0 +1,18 @@
+.button {
+  background-color: #dd5353;
+}
+
+.button:hover {
+  background-color: #dadd0c;
+}
+
+.button1 {
+  background-color: #dd5353;
+  color: rgba(8, 8, 8, 0.616);
+}
+
+.button1:hover {
+  background-color: rgba(8, 8, 8, 0.616);
+  color: #dadd0c;
+}
+/*# sourceMappingURL=main.css.map */

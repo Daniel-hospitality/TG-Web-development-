@@ -1,0 +1,20 @@
+@import 'assets/mixins';
+
+.button {
+    background-color: $primary-color;
+
+    &:hover { background-color: $secondary-color;
+    
+     }
+
+
+}
+
+.button1 {
+
+    @include stylebuttons;
+}
+
+.colorChangingSquare {
+    @include colortransition;
+}

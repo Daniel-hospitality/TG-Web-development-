@@ -1,0 +1,12 @@
+@import 'colors';
+
+
+@mixin stylebuttons {
+    background-color: $primary-color;
+    color: $tertiary-color;
+
+    &:hover {
+        background-color:$tertiary-color;
+        color: $secondary-color;
+    }
+}

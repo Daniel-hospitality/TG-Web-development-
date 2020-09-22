@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EEHL,OAAgB;CFU9B;;AARD,AAGI,OAHG,AAGF,MAAM,CAAC;EAAE,gBAAgB,EEJZ,OAAiB;CFM7B;;AAKN,AAAA,QAAQ,CAAC;ECRL,gBAAgB,ECJL,OAAgB;EDK3B,KAAK,ECHQ,oBAAoB;CFapC;;AAHD,ACLI,QDKI,ACLH,MAAM,CAAC;EACJ,gBAAgB,ECNP,oBAAoB;EDO7B,KAAK,ECRK,OAAiB;CDS9B",
+    "sources": [
+        "main.scss",
+        "assets/_mixins.scss",
+        "assets/_colors.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
