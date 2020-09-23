@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: sans-serif;
   
   
 }
@@ -16,7 +17,7 @@ h2 {
 }
 
 
-
+/* --------------------Nav--------------- */
 
 
 nav {
@@ -55,26 +56,19 @@ nav a:hover:not(.active) {
 ul {
     list-style: none;
     display: inline;
-    
-
-  
-}
+  }
 
 
-
-
-
-
-
-
-
-
-  /* main----------------------------------------------------- */
+ /* main----------------------------------------------------- */
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+ 
 
    /* Table---------------------------------------------------- */
 
@@ -85,6 +79,7 @@ ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-top: 1px solid black;
   border-right: 1px solid black;
+  
  
   width: 60%;
   margin-left: 450px;
@@ -125,6 +120,7 @@ form {
   display: flex;
   flex-flow: row wrap;
   border: none;
+ 
 }
 
 .fieldbox {
