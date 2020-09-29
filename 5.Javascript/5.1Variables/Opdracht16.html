@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>CharAt</h1>
+    <p>De methode charAt () retourneert het teken op de opgegeven index in een tekenreeks.
+        De index van het eerste teken is 0, het tweede teken is 1, enzovoort.</p>
+    <p>Tip: De index van het laatste teken in een string is string .length-1, het voorlaatste karakter is string
+        .length-2, enzovoort,<br>
+        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_charat </p>
+
+        <p>var str = "HELLO WORLD";<br>
+            var res = str.charAt(0)<br>
+        
+        Antw = H</p>
+
+        <p>var str = "HELLO WORLD";<br>
+            var res = str.charAt(5)<br>
+        
+        Antw = O</p>
+
+
+    <h1>Concat()</h1>
+    <p>De concat () methode wordt gebruikt om twee of meer strings samen te voegen.
+
+        Deze methode verandert de bestaande strings niet, maar retourneert een nieuwe string met de tekst van de
+        samengevoegde strings.<br>
+        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_concat_string</p>
+
+    <p>
+        var str1 = "Hello ";<br>
+        var str2 = "world!";<br>
+        var res = str1.concat(str2);
+
+    </p>
+
+    <h1>slice()</h1>
+    <p>De methode slice () extraheert delen van een string en retourneert de geëxtraheerde delen in een nieuwe string.
+
+        Gebruik de begin- en eindparameters om het deel van de tekenreeks op te geven dat u wilt extraheren.
+
+        Het eerste teken heeft de positie 0, de tweede heeft positie 1, enzovoort.
+
+        Tip: gebruik een negatief getal om te selecteren vanaf het einde van de string.
+
+    </p>
+    <p>var str = "Hello world!";<br>
+        var res = str.slice(0, 5);<br>
+        Antwoord is hello h=0 & o=5</p>
+
+    <h1>split</h1>
+    <p>De methode split () wordt gebruikt om een ​​tekenreeks op te splitsen in een reeks subtekenreeksen en retourneert
+        de nieuwe reeks.
+
+        Tip: als een lege tekenreeks ("") wordt gebruikt als scheidingsteken, wordt de tekenreeks over elk teken
+        verdeeld.
+
+        Opmerking: de methode split () verandert de oorspronkelijke tekenreeks niet.
+
+    </p>
+    <p>var str = "How are you doing today?";<br>
+        var res = str.split(" ");<br>
+       Antw=  how,are,you,doing,today</p>
+
+    <h1>substr()</h1>
+    <p>De methode substr () extraheert delen van een tekenreeks, beginnend bij het teken op de opgegeven positie, en
+        retourneert het opgegeven aantal tekens.</p>
+       <p> var str = "Hello world!";<br>
+        var res = str.substr(1, 4);<br>
+        Atw= ello </p>
+
+        <p> var str = "Hello world!";<br>
+            var res = str.substr(2);<br>
+        Ant= llo world!</p>
+
+</body>
+
+</html>
