@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="number" name="number" id="number">
     <button id="btn" onclick="checkNumber()">Button</button>
@@ -14,23 +16,24 @@
     </div>
 
     <script>
-         function checkNumber(){
+        function checkNumber() {
 
-var inputValue2 = document.getElementById('number').value;
+            var inputValue2 = document.getElementById('number').value;
 
-if(inputValue2 >5 && inputValue2 <10 ){
-document.getElementById('label').innerText = "Het ingevoerde getal is tussen 5 en 10";
+            if (inputValue2 > 5 && inputValue2 < 10) {
+                document.getElementById('label').innerText = "Het ingevoerde getal is tussen 5 en 10";
 
-}   else if(!inputValue2>0){
+            } else if (!inputValue2 > 0) {
 
-document.getElementById('label').innerText = "";
+                document.getElementById('label').innerText = "";
 
-}
-}
+            }
+        }
 
 
 
-        
-    </script>        
+
+    </script>
 </body>
+
 </html>

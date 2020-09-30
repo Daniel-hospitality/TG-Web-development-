@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>textcontent vs innertext</h1>
+    <p>textContent gets the content of all elements, including script> and style> elements. In contrast, innerText only shows “human-readable” elements. textContent returns every element in the node. In contrast, innerText is aware of styling and won't return the text of “hidden” elements</p>
+
+
+    
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+  
+    <script>
+  
+        function translateMonth() {
+            let input = document.getElementById('number').value;
+            if (input == 1) {
+                document.getElementById('translatedMonth').textContent = 'Januari';
+            } else if (input == 2) {
+                document.getElementById('translatedMonth').textContent = 'Februari';
+            } else if (input == 3) {
+                document.getElementById('translatedMonth').innerText = 'March';
+            } else if (input == 4) {
+                document.getElementById('translatedMonth').innerText = 'April';
+            } else if (input == 5) {
+                document.getElementById('translatedMonth').innerText = 'May';
+            } else if (input == 6) {
+                document.getElementById('translatedMonth').innerText = 'June';
+            } else if (input == 7) {
+                document.getElementById('translatedMonth').innerText = 'Juli';
+            } else if (input == 8) {
+                document.getElementById('translatedMonth').innerText = 'August';
+            } else if (input == 9) {
+                document.getElementById('translatedMonth').innerText = 'September';
+            } else if (input == 10) {
+                document.getElementById('translatedMonth').innerText = 'Oktober';
+            } else if (input == 11) {
+                document.getElementById('translatedMonth').innerText = 'November';
+            } else if (input == 12) {
+                document.getElementById('translatedMonth').innerText = 'December';
+
+
+            } else {
+                document.getElementById('translatedMonth').innerText = 'Dat is geen maand.';
+            }
+  
+        }
+    </script>
+ 
+
+</body>
+</html>

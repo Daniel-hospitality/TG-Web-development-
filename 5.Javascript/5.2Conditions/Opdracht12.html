@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p>JavaScript Logical Operators</p>
     <input type="number" name="number" id="input">
@@ -15,14 +17,13 @@
     <script>
         function checkNumber() {
             let input = document.getElementById('input').value;
-            if (input >= 13 && input <= 20)  {
-                document.getElementById('label').textContent = 'Het ingevoerde getal is gelijk aan of groter dan 13 en gelijk aan of kleiner dan 20.';
-            
-        
+            if (input > 30 && input < 35 || input > 40 && input < 45) {
+                document.getElementById('label').textContent = 'Het ingevoerde getal is tussen 30 en 35 of tussen 40 en 45';
             } else {
                 document.getElementById('label').textContent = '';
             }
         }
     </script>
 </body>
+
 </html>
