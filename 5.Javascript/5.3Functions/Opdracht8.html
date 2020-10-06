@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        th,
+        td {
+            border: thin solid black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Wiskunde</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Cijfer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Willem</td>
+                            <td><input type="text" class="wiskunde" value="9" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td><input type="text" class="wiskunde" value="7" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Kim Sing</td>
+                            <td><input type="text" class="wiskunde" value="10" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td><input type="text" class="wiskunde" value="4" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Joyce</td>
+                            <td><input type="text" class="wiskunde" value="5.5" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Gareth</td>
+                            <td><input type="text" class="wiskunde" value="1" oninput="checkValue(this)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="box">
+            <h2>Natuurkunde</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Cijfer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Willem</td>
+                            <td><input type="text" class="natuurkunde" value="7" oninput="checkValue(this)"> </td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td><input type="text" class="natuurkunde" value="5" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Kim Sing</td>
+                            <td><input type="text" class="natuurkunde" value="8" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td><input type="text" class="natuurkunde" value="6" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Joyce</td>
+                            <td><input type="text" class="natuurkunde" value="9" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Gareth</td>
+                            <td><input type="text" class="natuurkunde" value="5.5" oninput="checkValue(this)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="box">
+            <h2>Nederlands</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Cijfer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Willem</td>
+                            <td><input type="text" class="nederlands" value="7" oninput="checkValue(this)"> </td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td><input type="text" class="nederlands" value="7" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Kim Sing</td>
+                            <td><input type="text" class="nederlands" value="4" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td><input type="text" class="nederlands" value="8" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Joyce</td>
+                            <td><input type="text" class="nederlands" value="8.5" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Gareth</td>
+                            <td><input type="text" class="nederlands" value="4" oninput="checkValue(this)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="box">
+            <h2>Engels</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Cijfer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Willem</td>
+                            <td><input type="text" class="engels" value="6" oninput="checkValue(this)"> </td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td><input type="text" class="engels" value="6" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Kim Sing</td>
+                            <td><input type="text" class="engels" value="5.5" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td><input type="text" class="engels" value="4.3" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Joyce</td>
+                            <td><input type="text" class="engels" value="5.5" oninput="checkValue(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Gareth</td>
+                            <td><input type="text" class="engels" value="8" oninput="checkValue(this)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>Gemiddeld</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Talen</th>
+                            <th>Beta vakken</th>
+                            <th>Gemiddeld</th>
+                            <th>Volgende klas? >6.5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Willem</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                        <tr>
+                            <td>Kim Sing</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                        <tr>
+                            <td>Joyce</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                        <tr>
+                            <td>Gareth</td>
+                            <td class="talen"></td>
+                            <td class="betav"></td>
+                            <td class="volgkl"></td>
+                            <td class="over"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <script>
+        window.onload = startup();
+
+        function startup() {
+            let wisArray = document.getElementsByClassName('wiskunde');
+            let natArray = document.getElementsByClassName('natuurkunde');
+            let engArray = document.getElementsByClassName('engels');
+            let nedArray = document.getElementsByClassName('nederlands');
+            let talArray = document.getElementsByClassName("talen");
+            let betArray = document.getElementsByClassName("betav");
+            let volArray = document.getElementsByClassName("volgkl");
+            let overArray = document.getElementsByClassName("over");
+
+
+
+            for (i = 0; i < wisArray.length; i++) {
+                checkValue(wisArray[i]);
+                checkValue(natArray[i]);
+                checkValue(engArray[i]);
+                checkValue(nedArray[i]);
+                
+                
+
+
+
+
+                let eng = parseFloat(engArray[i].value);
+                let ned = parseFloat(nedArray[i].value);
+                let wis = parseFloat(wisArray[i].value);
+                let nat = parseFloat(natArray[1].value);
+                let taal = (ned + eng) /2;
+                let beta = (wis + nat) /2;
+                let klasVolg = (taal + beta) /2;
+                talArray[i].textContent = taal;
+                betArray[i].textContent = beta;
+                volArray[i].textContent = klasVolg;
+
+                checkValue(talArray[i]);
+                checkValue(betArray[i]);
+                checkValue(volArray[i]);
+
+                if (taal < 6.5 || beta < 6.5) {
+                    overArray[i].textContent = 'Nee';
+                    overArray[i].style.background = 'red';
+                } else {
+                    overArray[i].textContent = 'Ja';
+                    overArray[i].style.background = 'lightgreen';
+                }
+               
+
+
+                // console.log (taal);
+                // talArray[i].innerHTML = (engArray[i].value + nedArray[i].value) / 2;
+                // console.log(typeof engArray[i].value);
+                // console.log(typeof nedArray[i].value);
+
+                // checkValue(talArray[1]);
+                // checkValue(betArray[1]);
+                // checkValue(volArray[1]);
+
+            }
+        }
+
+        function checkValue(controle) {
+            let input = controle.value;
+            let text = parseFloat(controle.textContent);
+            if (controle.value < 5.5 || text < 5.5) {
+                controle.style.background = "red";
+            }
+            else if (controle.value >= 7 || text >= 7) {
+                controle.style.background = "green";
+            }
+            else if (controle.value >= 5.5 || text >= 5.5) {
+                controle.style.background = "lightgreen";
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -9,16 +9,12 @@
 
 <body>
     <p id="answer"></p>
-    <button onclick="answer()">click</button>
+    <input type="text" name="text" id="text">
+    <button onclick="answer(document.getElementById('text').value)">button</button>
     <script>
-
-        function answer() {
-
-            console.log('Hello World!');
-            // hier kun je coderen
+        function answer(input) {
+            console.log(input);
         }
-
- // Plaats hieronder alle antwoorden van de opdrachten.
     </script>
 
 </body>
