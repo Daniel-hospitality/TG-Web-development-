@@ -128,7 +128,7 @@
     </script>
 
     <h1>Opdracht 8</h1>
-    <p fruitTotaal9[3] vervangt Kiwi voor Jackfruit.></p>
+    <p>FruitTotaal9[3] vervangt Kiwi voor Jackfruit.</p>
     <script>
         const fruitTotaal9 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
         fruitTotaal9[3] = "Jackfruit";
@@ -139,7 +139,20 @@
     </script>
 
     <h1>Opdracht 9</h1>
+    <p>swap value 4 is met 0 gedraaid: uitkomst Mango Appel</p>
 
+    <script>
+        const fruitTotaal10 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const swap = fruitTotaal10[4];
+        fruitTotaal10[4] = fruitTotaal10[0];
+        fruitTotaal10[0] = swap;
+
+
+        console.log(fruitTotaal10);
+
+
+
+    </script>
 
 
 </body>
