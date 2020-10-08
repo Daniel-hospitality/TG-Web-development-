@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Antwoord 1 = Local blockscope</h1>
+
+    <p>Uncaught ReferenceError: carBrand is not defined
+        at Opdracht1.html:15</p>
+
+    <p>de locale const carBrand (variable) is alleen aanspreekbaar binnen de function Brackets in dit geval staat de
+        console buiten de Brackets
+        het Local scope bestaat uit Block en function scopes.</p>
+
+    <p>Fumction scope is alleen bij VAR.</p>
+    <p>Block scope is nieuwe styl en wordt gebruikt bij if, switch cond of for en while loops const en let. </p>
+    <p>Over het algemeen geldt dat als je {brackets}ziet het een blockscope  is</p>
+    <script>
+        //vanaf hier is variable carBrand niet aanspreekbaar// 
+        function printCar() {
+            const carBrand = "Volvo";
+
+            //carbrand is wel aanspreekbaar//
+        }
+
+        //console log is niet aanspreekbaar staat buiten de brackets is buiten de scope// 
+        console.log(carBrand);
+
+    </script>
+</body>
+
+</html>

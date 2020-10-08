@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 1</h1>
+    <p>console log 9 = 10</p>
+    <script>
+
+        let randomNumbers = [];
+
+        randomNumbers = [1, 4, 5, 8, 9, 2, 6, 3, 7, 10];
+
+        console.log(randomNumbers[9]);//index 9
+        console.log(randomNumbers); //alles
+    </script>
+
+    <h1>Opdracht 2, 3 en 4</h1>
+    <p>Appel = index 0</p>
+    <p>Aardbei = index 1</p>
+    <script>
+
+        let fruitTotaal = [];
+
+        fruitTotaal = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+
+        console.log(fruitTotaal[1]);//index 1
+        console.log(fruitTotaal)//alles
+    </script>
+
+    <h1>Opdracht 5</h1>
+    <p>consolelog, van randomMatch en fruitModulo geven willekeurig nr onder 10 en willkeurig keuze fruit item</p>
+    <script>
+
+        const randomNumbers1 = [1, 4, 5, 8, 9, 2, 6, 3, 7, 10];
+        const fruitTotaal1 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const randomMath = randomNumbers1[Math.floor(Math.random() * 10)];
+        const fruitModulo = randomMath % 5;
+        console.log(randomMath);//pakt willekeurig nr van Math
+        console.log(fruitTotaal1[fruitModulo]); //pakt willekeurig fruit string
+
+    </script>
+
+    <h1>Opdracht 6</h1>
+    <p>push(), pop(), shift(), slice(), splice(), sort()</p>
+    <p>
+        push() kan een nieuw element toevoegen. zie consolelog extraFruit en fruitTotaal2
+    </p>
+    <script>
+
+        const fruitTotaal2 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const extraFruit = fruitTotaal2.push("Jackfruit");
+
+        console.log(extraFruit);//non string 6
+        console.log(fruitTotaal2); //6 tekst strings
+
+    </script>
+
+    <p>pop() verwijderd een element.</p>
+
+    <script>
+
+        const fruitTotaal3 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const minderFruit = fruitTotaal3.pop("Kiwi");
+
+        console.log(minderFruit);//non string 4
+        console.log(fruitTotaal3); //4 tekst strings
+
+    </script>
+
+    <p>shift() Verwijderd het eerste element.</p>
+    <script>
+
+        const fruitTotaal4 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const eersteFruit = fruitTotaal4.shift();
+
+        console.log(eersteFruit);
+        console.log(fruitTotaal4); //Appel shift
+    </script>
+
+    <p>slice() kan je een geddelte uit een array halen en soort kopie naar een nieuwe array</p>
+    <script>
+
+        const fruitTotaal5 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const boomFruit = fruitTotaal5.slice(1, 3);
+
+
+
+        console.log(boomFruit);
+    </script>
+
+    <p> splice() past de inhoud aan van een array door bestaande en of nieuwe elemeneten te verwijderen en of toe
+        tevoegen.</p>
+    <p></p>
+    <script>
+
+        const fruitTotaal6 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        const removeFruit = fruitTotaal6.splice(2, 2, "Dorian");
+
+
+
+        console.log(fruitTotaal6);
+    </script>
+
+    <p>sort() kan de items sorteren van de array op alfabet of numeriek oplopend en aflopend hoog laag</p>
+    <script>
+
+        const fruitTotaal7 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        fruitTotaal7.sort();
+
+
+
+        console.log(fruitTotaal7);
+    </script>
+    <h1>Opdracht 7</h1>
+    <p>5</p>
+    <script>
+        const fruitTotaal8 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        // fruitTotaal8.length();
+
+        console.log(fruitTotaal8.length)
+
+    </script>
+
+    <h1>Opdracht 8</h1>
+    <p fruitTotaal9[3] vervangt Kiwi voor Jackfruit.></p>
+    <script>
+        const fruitTotaal9 = ["Appel", "Aardbei", "Peer", "Kiwi", "Mango"];
+        fruitTotaal9[3] = "Jackfruit";
+
+        console.log(fruitTotaal9)
+
+
+    </script>
+
+    <h1>Opdracht 9</h1>
+
+
+
+</body>
+
+</html>
