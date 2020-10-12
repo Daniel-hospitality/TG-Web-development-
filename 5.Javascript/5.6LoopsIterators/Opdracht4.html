@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opdracht 1</title>
+    <title>Opdracht 4</title>
 </head>
-
 <body>
-
-    <h1>Opdracht 1</h1>
-    <p>info from https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for</p>
+    
+    <h1>Opdracht 4</h1>
+    <p>info from https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_while_cars</p>
     <div id="answer"></div>
     <script>
         const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"]
-        for (i = 0; i < sports.length; i++) {
+        let i = 0;
+        while (i < sports.length) {
             console.log(sports[i]);
+            i++;
         }
-
-        document.getElementById("answer").innerHTML =  [i] + sports;
        
 
 
     </script>
-</body>
 
+</body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+</head>
+
+<body>
+    <h1>Opdracht 5</h1>
+    <p>info from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in</p>
+    <p>xtra uitleg nodig, omcat copy van vb link verschil tussen property en of index methode.</p>
+    <p>A for...in loop only iterates over enumerable, non-Symbol properties. Objects created from built–in constructors like Array and Object have inherited non–enumerable properties from Object.prototype and String.prototype, such as String's indexOf() method or Object's toString() method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).</p>
+    <div id="answer"></div>
+    <script>
+        const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"]
+
+
+
+        for (const property in sports) {
+            console.log(`${property}: ${sports[property]}`);
+
+
+        }
+
+    </script>
+
+    <script>
+        const sports1 = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"]
+
+
+
+
+        for (index in sports1) {
+            console.log(sports1[index]);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
