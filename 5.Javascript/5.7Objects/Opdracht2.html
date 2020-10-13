@@ -18,26 +18,36 @@
 
     <div id="clubs" class="clubs"></div>
     <script>
-        const clubInfo = function (nameclub, typeSport, totalMember) {
+
+        function clubInfo(nameclub, typeSport, totalmember, contactinfo) {
             this.name = nameclub;
             this.type = typeSport;
-            this.Member = totalMember;
-            
-        }
-        
-        const clubInfo1 = new clubInfo("KimGym", "watjekwando", "1337");
-        const clubInfo2 = new clubInfo("JensGym", "Dammen", "50");
-        const clubInfo3 = new clubInfo("Blockgym", "Kickboksen", "500");
-
-        const contactDetail = function (Adres, Telefoonnr, Contactpersoon) {
-            this.Adres =
-            this.Telefoonnr =
-            this.Contactpersoon =
+            this.member = totalmember;
+            this.contactinfo = contactinfo;
 
         }
 
 
-        
+
+        function contactinfo(adres, telefoonnr, contactpersoon) {
+            this.adres = adres;
+            this.telefoonnr = telefoonnr;
+            this.contactpersoon = contactpersoon;
+
+        }
+
+        const KimGymcontact = new contactinfo("KimGymstraat 909", "06123456789", "LingLing");
+
+        const KimGym = new clubInfo("KimGym", "watjekwando", 1337, KimGymcontact);
+        console.log(KimGym.name);
+        console.log(KimGym.type);
+        console.log(KimGym.member);
+        console.log(KimGym.contactinfo.adres);
+        console.log(KimGym.contactinfo.telefoonnr);
+        console.log(KimGym.contactinfo.contactpersoon);
+
+
+
 
     </script>
 
