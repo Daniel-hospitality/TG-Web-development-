@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    
+<body>
+
+    <div id="clubs" class="clubs"></div>
+    <script>
+
+        function clubInfo4(nameclub, typeSport, totalmember) {
+            this.name = nameclub;
+            this.type = typeSport;
+            this.member = totalmember;
+
+        }
+
+        KimGym = new clubInfo4("KimGym", "watjekwando", "1337");
+        JensGym = new clubInfo4("JensGym", "Dammen", "50");
+        BlockGym = new clubInfo4("BlockGym", "Kickboksen", "500");
+        FitGym = new clubInfo4("BlockGym2", "boksen", "1500");
+
+        let sportgym = [KimGym, JensGym, BlockGym, FitGym];
+        console.log(sportgym);//test 
+        for (i = 0; i < sportgym.length; i++) {
+            console.log(sportgym[i].name);
+
+        }
+    </script>
+
+
+
 </body>
+
 </html>

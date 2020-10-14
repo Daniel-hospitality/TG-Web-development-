@@ -6,14 +6,68 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Opdracht 9</h1>
+    <p>https://www.w3resource.com/javascript-exercises/javascript-function-exercise-24.php</p>
     
 <script>
 
     
-const BubbleNumbers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
-        
+//const BubbleNumbers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+
+function bubble_Sort(a)
+{
+    let swapp;
+    let n = a.length-1;
+    let x=a;
+    do {
+        swapp = false;
+        for (let i=0; i < n; i++)
+        {
+            if (x[i] < x[i+1])
+            {
+               let temp = x[i];
+               x[i] = x[i+1];
+               x[i+1] = temp;
+               swapp = true;
+            }
+        }
+        n--;
+    } while (swapp);
+ return x; 
+}
+console.log(bubble_Sort([2, 7, 5, 10, 4, 9, 3, 1, 8, 6]));
+
       
     
+</script>
+
+<h1>Methode 2</h1>
+<p>https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-7.php</p>
+
+<script>
+function swap(arr, first_Index, second_Index){
+    let temp = arr[first_Index];
+    arr[first_Index] = arr[second_Index];
+    arr[second_Index] = temp;
+}
+
+function bubble_Sort(arr){
+
+    let len = arr.length,
+        i, j, stop;
+
+    for (i=0; i < len; i++){
+        for (j=0, stop=len-i; j < stop; j++){
+            if (arr[j] > arr[j+1]){
+                swap(arr, j, j+1);
+            }
+        }
+    }
+
+    return arr;
+}
+console.log(bubble_Sort([2, 7, 5, 10, 4, 9, 3, 1, 8, 6]));
+
 </script>
 
 </body>
